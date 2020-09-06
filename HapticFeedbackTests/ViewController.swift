@@ -7,8 +7,14 @@
 //
 
 import UIKit
+import CoreHaptics
 
 class ViewController: UIViewController {
+    
+    lazy var supportedHaptics: Bool = {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.supportsHaptics
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
