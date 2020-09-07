@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EUs-9b-34W">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--System Haptics-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HapticFeedbackTests" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,20 +15,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Haptics" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cq-fA-LkS">
-                                <rect key="frame" x="110.5" y="68" width="193" height="24"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="RUE-Vf-Xyd"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="80" translatesAutoresizingMaskIntoConstraints="NO" id="MPe-fE-XdE">
-                                <rect key="frame" x="16" y="188.5" width="382" height="529.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="MPe-fE-XdE">
+                                <rect key="frame" x="16" y="128" width="382" height="480"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="7Lm-la-rBL">
-                                        <rect key="frame" x="7.5" y="0.0" width="367" height="98.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="7Lm-la-rBL">
+                                        <rect key="frame" x="7.5" y="0.0" width="367" height="96.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification Feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNG-tc-Doe">
                                                 <rect key="frame" x="80.5" y="0.0" width="206" height="25.5"/>
@@ -37,34 +28,50 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="czb-62-TQW">
-                                                <rect key="frame" x="0.0" y="68.5" width="367" height="30"/>
+                                                <rect key="frame" x="0.0" y="56.5" width="367" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-rq-7vS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="8Y2-cI-9Rt"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="MEA-dV-sSU"/>
                                                         </constraints>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Error"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="errorButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4KX-Hs-phi"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="65U-Ep-cP6">
-                                                        <rect key="frame" x="134" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="134" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Success"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="successButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lkg-8E-Ybm"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8x4-ka-VQI">
-                                                        <rect key="frame" x="268" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="268" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Warning"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="warningButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cIp-Hx-Lxy"/>
                                                         </connections>
@@ -72,9 +79,12 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="96.5" id="obq-Ek-sKL"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="rcl-a7-irH">
-                                        <rect key="frame" x="7.5" y="178.5" width="367" height="171.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="rcl-a7-irH">
+                                        <rect key="frame" x="7.5" y="179.5" width="367" height="143.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impact Feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nq-SG-sdZ">
                                                 <rect key="frame" x="103" y="0.0" width="161.5" height="25.5"/>
@@ -83,34 +93,50 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="hMn-pI-i0g">
-                                                <rect key="frame" x="0.0" y="68.5" width="367" height="30"/>
+                                                <rect key="frame" x="0.0" y="44.5" width="367" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6A-7d-wvT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="8O8-vd-5fD"/>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="UR9-cY-487"/>
                                                         </constraints>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Light"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="lightButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oBo-eZ-mgR"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4s-k4-LPV">
-                                                        <rect key="frame" x="134" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="134" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Medium"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="mediumButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J3x-wW-6LO"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3K-zb-ZPl">
-                                                        <rect key="frame" x="268" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="268" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Heavy"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="heavyButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b3M-Nx-8m0"/>
                                                         </connections>
@@ -118,26 +144,37 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="EOm-aA-JbJ">
-                                                <rect key="frame" x="67" y="141.5" width="233" height="30"/>
+                                                <rect key="frame" x="67" y="103.5" width="233" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4Y-Zx-cmW">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="618-3n-3yP"/>
+                                                            <constraint firstAttribute="height" constant="40" id="V60-ms-Wwl"/>
                                                         </constraints>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Rigid"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="heavyButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H04-wi-kSt"/>
                                                             <action selector="rigidButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="24g-j3-7x0"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0lz-Ht-2lE">
-                                                        <rect key="frame" x="134" y="0.0" width="99" height="30"/>
+                                                        <rect key="frame" x="134" y="0.0" width="99" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Soft"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="heavyButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kSO-ZI-Bgg"/>
                                                             <action selector="softButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QoY-Rh-5yr"/>
@@ -146,9 +183,12 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="143.5" id="TrB-o9-75k"/>
+                                        </constraints>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="DiJ-1a-DnS">
-                                        <rect key="frame" x="99" y="430" width="184" height="99.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="DiJ-1a-DnS">
+                                        <rect key="frame" x="99" y="405.5" width="184" height="74.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Impact Feedback" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KM3-JA-JJO">
                                                 <rect key="frame" x="11.5" y="0.0" width="161.5" height="25.5"/>
@@ -156,45 +196,144 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-tO-tOW">
-                                                <rect key="frame" x="0.0" y="68.5" width="184" height="31"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ba7-tO-tOW">
+                                                <rect key="frame" x="0.0" y="34.5" width="184" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDv-rR-OYb">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="31"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
                                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Jec-aH-O56"/>
+                                                            <constraint firstAttribute="height" constant="40" id="lxD-G1-iQ6"/>
                                                         </constraints>
                                                         <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Selection"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="selectionButtonTupped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CNS-bN-P8g"/>
                                                         </connections>
                                                     </button>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Awz-1z-4qj">
-                                                        <rect key="frame" x="135" y="0.0" width="51" height="31"/>
+                                                        <rect key="frame" x="135" y="4.5" width="51" height="31"/>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="74.5" id="yUm-pA-JlI"/>
+                                        </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="480" id="a0W-FW-rhW"/>
+                                </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfU-eD-Uzr">
+                                <rect key="frame" x="107" y="794" width="200" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.33000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="evN-C9-zoD"/>
+                                    <constraint firstAttribute="height" constant="44" id="gAQ-tt-HNo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <state key="normal" title="Custom  haptics →"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="OCC-LM-YZc" kind="show" id="cfb-qn-k96"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="1cq-fA-LkS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3On-Zj-rmQ"/>
-                            <constraint firstItem="MPe-fE-XdE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="1cq-fA-LkS" secondAttribute="bottom" constant="24" id="M8Z-O5-ep0"/>
+                            <constraint firstItem="tfU-eD-Uzr" firstAttribute="top" relation="greaterThanOrEqual" secondItem="MPe-fE-XdE" secondAttribute="bottom" constant="40" id="Mp7-uQ-2B3"/>
                             <constraint firstItem="MPe-fE-XdE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="POR-B3-eCA"/>
-                            <constraint firstItem="MPe-fE-XdE" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="kRk-vC-9Sv"/>
-                            <constraint firstItem="1cq-fA-LkS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="n7S-jp-Psc"/>
-                            <constraint firstItem="MPe-fE-XdE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oL2-2W-6Xg"/>
+                            <constraint firstItem="MPe-fE-XdE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ehI-CZ-Qnk"/>
+                            <constraint firstItem="tfU-eD-Uzr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mYh-FJ-PWI"/>
+                            <constraint firstItem="MPe-fE-XdE" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="v7t-da-LYv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tfU-eD-Uzr" secondAttribute="bottom" constant="24" id="y40-kj-DFa"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MPe-fE-XdE" secondAttribute="trailing" constant="16" id="yaY-LM-o31"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="System Haptics" id="3TC-aL-W4B">
+                        <barButtonItem key="backBarButtonItem" title="SysHap`s" id="wnM-8t-EPV"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Custom Haptic-->
+        <scene sceneID="5DE-jz-NC7">
+            <objects>
+                <viewController id="OCC-LM-YZc" customClass="CustomHapticsViewController" customModule="HapticFeedbackTests" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cNR-SB-V6a">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBO-2K-zZh">
+                                <rect key="frame" x="133" y="455" width="148" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.66000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="148" id="6g8-DU-yGX">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="40" id="U8g-Ag-w1t"/>
+                                </constraints>
+                                <color key="tintColor" red="0.9559744" green="0.96306437249999999" blue="0.99474352600000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Custom Haptic"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="customHupticPuttonPressed:" destination="OCC-LM-YZc" eventType="touchUpInside" id="Jqq-3Y-rZF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DBO-2K-zZh" firstAttribute="centerX" secondItem="vQW-r7-UlZ" secondAttribute="centerX" id="Zl9-qC-klE"/>
+                            <constraint firstItem="DBO-2K-zZh" firstAttribute="centerY" secondItem="vQW-r7-UlZ" secondAttribute="centerY" id="j2H-Ne-LvV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vQW-r7-UlZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Haptic" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="tMb-tO-EcU">
+                        <barButtonItem key="backBarButtonItem" title="System Haptics" id="mD4-AY-tMI"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="THv-jc-har" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1926.0869565217392" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hQe-0B-fGN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EUs-9b-34W" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wLv-xJ-5vG">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hRh-2E-d1B"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BgX-YX-11v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
