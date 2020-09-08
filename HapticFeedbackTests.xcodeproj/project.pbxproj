@@ -9,26 +9,26 @@
 /* Begin PBXBuildFile section */
 		330C99702506BE0200F52682 /* CustomHapticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330C996F2506BE0200F52682 /* CustomHapticsViewController.swift */; };
 		330C99852506D10700F52682 /* AHAP in Resources */ = {isa = PBXBuildFile; fileRef = 330C99842506D10700F52682 /* AHAP */; };
+		330C998C2507EE3F00F52682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330C998A2507ED4400F52682 /* Main.storyboard */; };
+		330C998D2507EE4100F52682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 330C99882507ED4400F52682 /* LaunchScreen.storyboard */; };
+		330C99932508176000F52682 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 330C99922508176000F52682 /* Assets.xcassets */; };
 		334A66D7250507B000E9AC3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A66D6250507B000E9AC3F /* AppDelegate.swift */; };
 		334A66D9250507B000E9AC3F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A66D8250507B000E9AC3F /* SceneDelegate.swift */; };
 		334A66DB250507B000E9AC3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A66DA250507B000E9AC3F /* ViewController.swift */; };
-		334A66DE250507B000E9AC3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334A66DC250507B000E9AC3F /* Main.storyboard */; };
 		334A66E1250507B000E9AC3F /* HapticFeedbackTests.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 334A66DF250507B000E9AC3F /* HapticFeedbackTests.xcdatamodeld */; };
-		334A66E3250507B200E9AC3F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 334A66E2250507B200E9AC3F /* Assets.xcassets */; };
-		334A66E6250507B200E9AC3F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 334A66E4250507B200E9AC3F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		330C996F2506BE0200F52682 /* CustomHapticsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHapticsViewController.swift; sourceTree = "<group>"; };
 		330C99842506D10700F52682 /* AHAP */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AHAP; sourceTree = "<group>"; };
+		330C99892507ED4400F52682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		330C998B2507ED4400F52682 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		330C99922508176000F52682 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../../Downloads/AppIcons/Assets.xcassets; sourceTree = "<group>"; };
 		334A66D3250507B000E9AC3F /* HapticFeedbackTests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HapticFeedbackTests.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		334A66D6250507B000E9AC3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		334A66D8250507B000E9AC3F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		334A66DA250507B000E9AC3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		334A66DD250507B000E9AC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		334A66E0250507B000E9AC3F /* HapticFeedbackTests.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HapticFeedbackTests.xcdatamodel; sourceTree = "<group>"; };
-		334A66E2250507B200E9AC3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		334A66E5250507B200E9AC3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		334A66E7250507B200E9AC3F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,13 +64,20 @@
 		330C997C2506C8BC00F52682 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				334A66DC250507B000E9AC3F /* Main.storyboard */,
-				334A66E2250507B200E9AC3F /* Assets.xcassets */,
-				334A66E4250507B200E9AC3F /* LaunchScreen.storyboard */,
+				330C99922508176000F52682 /* Assets.xcassets */,
 				334A66DF250507B000E9AC3F /* HapticFeedbackTests.xcdatamodeld */,
 				334A66E7250507B200E9AC3F /* Info.plist */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		330C99872507ED4400F52682 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				330C998A2507ED4400F52682 /* Main.storyboard */,
+				330C99882507ED4400F52682 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		334A66CA250507B000E9AC3F = {
@@ -92,9 +99,10 @@
 		334A66D5250507B000E9AC3F /* HapticFeedbackTests */ = {
 			isa = PBXGroup;
 			children = (
-				330C997B2506C8AB00F52682 /* Delegates */,
 				330C997A2506C87200F52682 /* ViewControllers */,
 				330C99842506D10700F52682 /* AHAP */,
+				330C99872507ED4400F52682 /* Storyboards */,
+				330C997B2506C8AB00F52682 /* Delegates */,
 				330C997C2506C8BC00F52682 /* Other */,
 			);
 			path = HapticFeedbackTests;
@@ -158,10 +166,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				334A66E6250507B200E9AC3F /* LaunchScreen.storyboard in Resources */,
-				334A66E3250507B200E9AC3F /* Assets.xcassets in Resources */,
+				330C998C2507EE3F00F52682 /* Main.storyboard in Resources */,
+				330C998D2507EE4100F52682 /* LaunchScreen.storyboard in Resources */,
+				330C99932508176000F52682 /* Assets.xcassets in Resources */,
 				330C99852506D10700F52682 /* AHAP in Resources */,
-				334A66DE250507B000E9AC3F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,20 +191,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		334A66DC250507B000E9AC3F /* Main.storyboard */ = {
+		330C99882507ED4400F52682 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				334A66DD250507B000E9AC3F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		334A66E4250507B200E9AC3F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				334A66E5250507B200E9AC3F /* Base */,
+				330C99892507ED4400F52682 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		330C998A2507ED4400F52682 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330C998B2507ED4400F52682 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -330,7 +338,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = moonsapps.HapticFeedbackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -348,7 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = moonsapps.HapticFeedbackTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

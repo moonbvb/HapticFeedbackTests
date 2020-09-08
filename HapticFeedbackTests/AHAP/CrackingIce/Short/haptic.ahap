@@ -1,0 +1,179 @@
+{
+    "Version": 1,
+    "Metadata":
+        {
+            "Project" : "HapticFeedbackTests",
+            "Created" : "7 September 2020",
+            "Description" : "Haptics for the sound of cracking ice"
+        },
+    "Pattern":
+    [
+        {
+            "Event":
+            {
+                "Time": 0.053,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.75 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.096,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.7 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.173,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.8 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.2,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.7 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.234,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.6 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.275,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.9 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.316,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.7 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.355,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.7 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.398,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.8 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.428,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1.0 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.445,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 1.0 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.473,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.6 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {
+            "Event":
+            {
+                "Time": 0.516,
+                "EventType": "HapticTransient",
+                "EventParameters":
+                [
+                    { "ParameterID": "HapticIntensity", "ParameterValue": 0.5 },
+                    { "ParameterID": "HapticSharpness", "ParameterValue": 0.2 }
+                ]
+            }
+        },
+        {"Event":
+            {
+                "Time":0,
+                "EventType":"AudioCustom",
+                "EventWaveformPath":"AHAP/CrackingIce/Short/Sound.wav",
+                "EventParameters":
+                [
+                    {"ParameterID":"AudioVolume","ParameterValue":1.0}
+                ]
+            }
+        }
+    ]
+}

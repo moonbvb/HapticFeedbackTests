@@ -81,8 +81,45 @@ class CustomHapticsViewController: UIViewController {
         }
     }
     
-    @IBAction func customHupticPuttonPressed(_ sender: UIButton) {
-        playHapticsFile(named: "AHAP/CrackingIce")
+    @IBAction func customHupticButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/CrackingIce/Short/haptic")
     }
+    
+    //MARK: - Actions play Transient AHAPs
+    @IBAction func test1ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/TransientTests/Test1")
+    }
+    @IBAction func test2ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/TransientTests/Test2")
+    }
+    
+    @IBAction func test3ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/TransientTests/Test3")
+    }
+    
+    @IBAction func test4ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/TransientTests/Test4")
+    }
+    
+    
+    //MARK: - Actions play Continuous AHAPs
+    
+    @IBAction func cTest1ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/ContinuousTests/CTest1")
+    }
+    
+    @IBAction func cTest2ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/ContinuousTests/CTest2")
+    }
+    
+    @IBAction func cTest3ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/ContinuousTests/CTest3")
+    }
+    
+    @IBAction func cTest4ButtonPressed(_ sender: UIButton) {
+        playHapticsFile(named: "AHAP/ContinuousTests/CTest4")
+    }
+    
+    
     
 }
